@@ -16,11 +16,10 @@ export default function Navbar() {
 
   const menuItems = [
     { name: 'Home', href: '/' },
-    { name: 'FAQ', href: '/faqs' },
-    { name: 'Blog', href: '/blogs' },
+    { name: 'Jurusan', href: '/jurusan' },
+    { name: 'Prestasi', href: '/prestasi' },
+    { name: 'Blog', href: '/blogs' }
   ];
-
-  const cartCount = 3;
 
   // CEK LOGIN
   useEffect(() => {
@@ -47,32 +46,13 @@ export default function Navbar() {
     router.push('/signin');
   };
 
-  // CART ICON
-  const CartIcon = () => (
-    <div className="relative">
-      <Link href="/cart" className="text-white hover:text-yellow-400 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-          <path strokeLinecap="round" strokeLinejoin="round"
-            d="M3 3h2l.4 2M7 13h10l3-7H5.4M7 13L5.4 5M7 13l-2 9m12-9l2 9m-6-9v9" />
-        </svg>
-      </Link>
-
-      {cartCount > 0 && (
-        <span className="absolute -top-2 -right-2 bg-yellow-400 text-[#0f172a] text-xs font-bold rounded-full px-1.5 py-0.5">
-          {cartCount}
-        </span>
-      )}
-    </div>
-  );
-
   return (
-    <nav className="w-full sticky top-0 bg-[#006E29] bg-opacity-90 backdrop-blur-md shadow-md z-50">
+    <nav className="w-full sticky top-0 bg-blue-800/90 backdrop-blur-md shadow-lg z-50 font-[Outfit]">
       <div className="w-full flex items-center py-4 px-6 md:px-12">
 
         {/* LOGO */}
-        <Link href="/" className="text-2xl font-bold text-yellow-400">
-          FNBTECH
+        <Link href="/" className="text-2xl font-extrabold text-yellow-400 tracking-wide">
+          SMK 4 TANGERANG
         </Link>
 
         <div className="flex-1"></div>
@@ -81,18 +61,15 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-8 text-white font-medium tracking-wide">
           {menuItems.map(({ name, href }) => (
             <li key={name}>
-              <Link href={href} className="hover:text-yellow-400 transition">
+              <Link href={href} className="hover:text-yellow-300 transition">
                 {name}
               </Link>
             </li>
           ))}
         </ul>
 
-        {/* ICON AREA */}
+        {/* USER AREA */}
         <div className="flex items-center space-x-6 ml-6">
-
-          {/* CART */}
-          <CartIcon />
 
           {/* USER MENU DESKTOP */}
           {isLoggedIn ? (
@@ -136,9 +113,9 @@ export default function Navbar() {
           ) : (
             <Link
               href="/signin"
-              className="hidden md:block text-white hover:text-yellow-400 transition"
+              className="hidden md:block text-white hover:text-yellow-300 transition"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none"
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round"
                   d="M5.121 17.804A9 9 0 1118.88 17.804M12 12a4 4 0 100-8 4 4 0 000 8z" />
@@ -149,7 +126,7 @@ export default function Navbar() {
           {/* HAMBURGER */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="md:hidden focus:outline-none focus:ring-2 focus:ring-yellow-300"
           >
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
@@ -162,14 +139,14 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="md:hidden bg-[#0f172a] bg-opacity-95 px-6 pb-4 space-y-4">
+        <div className="md:hidden bg-blue-900/95 px-6 pb-4 space-y-4">
 
           {menuItems.map(({ name, href }) => (
             <Link
               key={name}
               href={href}
               onClick={() => setMenuOpen(false)}
-              className="block text-white font-medium hover:text-yellow-400"
+              className="block text-white font-medium hover:text-yellow-300"
             >
               {name}
             </Link>
@@ -180,7 +157,7 @@ export default function Navbar() {
             <>
               <Link
                 href="/dashboard/profile"
-                className="block text-yellow-400 font-semibold py-2 text-center border border-yellow-400 rounded-md hover:bg-yellow-400 hover:text-[#0f172a]"
+                className="block text-yellow-300 font-semibold py-2 text-center border border-yellow-300 rounded-md hover:bg-yellow-300 hover:text-[#0f172a]"
                 onClick={() => setMenuOpen(false)}
               >
                 Profile
@@ -191,7 +168,7 @@ export default function Navbar() {
                   setMenuOpen(false);
                   handleLogout();
                 }}
-                className="block w-full text-yellow-400 font-semibold border border-yellow-400 rounded-md text-center py-2 hover:bg-yellow-400 hover:text-black"
+                className="block w-full text-yellow-300 font-semibold border border-yellow-300 rounded-md text-center py-2 hover:bg-yellow-300 hover:text-[#0f172a]"
               >
                 Logout
               </button>
@@ -200,7 +177,7 @@ export default function Navbar() {
             <>
               <Link
                 href="/signin"
-                className="block text-yellow-400 font-semibold border border-yellow-400 rounded-md text-center py-2 hover:bg-yellow-400 hover:text-black"
+                className="block text-yellow-300 font-semibold border border-yellow-300 rounded-md text-center py-2 hover:bg-yellow-300 hover:text-[#0f172a]"
                 onClick={() => setMenuOpen(false)}
               >
                 Masuk

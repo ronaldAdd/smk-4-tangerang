@@ -1,86 +1,93 @@
 {
   "products": [
     {
-      "name": "Excelsa Coffee",
-      "slug": "excelsa-coffee",
-      "price": 150.0,
-      "image": "/aranoz_files/products/Excelsa-Coffee-300x300.webp.bv.webp",
-      "description": "Premium Excelsa Coffee dengan karakter rasa unik dan aroma buah yang khas.",
-      "details": ["Grade: Premium", "Origin: Indonesia", "Process: Natural"],
+      "name": "Rekayasa Perangkat Lunak (RPL)",
+      "slug": "rekayasa-perangkat-lunak",
+      "price": 0,
+      "image": "/images/jurusan/rpl.webp",
+      "description": "Program Keahlian RPL berfokus pada pengembangan software, web development, mobile apps, dan pemrograman modern.",
+      "details": [
+        "Pemrograman Web & Mobile",
+        "Database & SQL",
+        "Software Engineering",
+        "UI/UX Design"
+      ],
       "variants": [
-        { "label": "Green Beans", "price": 60 },
-        { "label": "Powder", "price": 95 },
-        { "label": "Roasted Beans", "price": 130 }
+        { "label": "Kelas 10", "price": 0 },
+        { "label": "Kelas 11", "price": 0 },
+        { "label": "Kelas 12", "price": 0 }
       ]
     },
     {
-      "name": "Liberica Coffee",
-      "slug": "liberica-coffee",
-      "price": 180.0,
-      "image": "/aranoz_files/products/Liberica-Coffee-300x300.webp.bv.webp",
-      "description": "Liberica Coffee dengan karakter smoky dan aroma floral khas.",
-      "details": ["Grade: Premium", "Origin: Indonesia", "Process: Natural"],
+      "name": "Teknik Komputer & Jaringan (TKJ)",
+      "slug": "teknik-komputer-jaringan",
+      "price": 0,
+      "image": "/images/jurusan/rpl.webp",
+      "description": "Jurusan TKJ mempelajari jaringan komputer, server, sistem operasi, keamanan jaringan, dan infrastruktur IT.",
+      "details": [
+        "Administrasi Jaringan",
+        "Cisco & Mikrotik",
+        "Network Security",
+        "Hardware & Troubleshooting"
+      ],
       "variants": [
-        { "label": "100g", "price": 70 },
-        { "label": "250g", "price": 110 },
-        { "label": "500g", "price": 150 },
-        { "label": "1kg", "price": 180 }
+        { "label": "Kelas 10", "price": 0 },
+        { "label": "Kelas 11", "price": 0 },
+        { "label": "Kelas 12", "price": 0 }
       ]
     },
     {
-      "name": "Abyssinian Coffee",
-      "slug": "abyssinian-coffee",
-      "price": 210.0,
-      "image": "/aranoz_files/products/Abyssinia-Coffee-1-300x300.webp.bv.webp",
-      "description": "Abyssinian Coffee dengan rasa fruity dan acidity yang seimbang.",
-      "details": ["Grade: Premium", "Origin: Ethiopia", "Process: Washed"],
+      "name": "Desain Komunikasi Visual (DKV)",
+      "slug": "desain-komunikasi-visual",
+      "price": 0,
+      "image": "/images/jurusan/rpl.webp",
+      "description": "Jurusan DKV berfokus pada desain grafis, ilustrasi, multimedia, animasi, dan komunikasi visual kreatif.",
+      "details": [
+        "Desain Grafis",
+        "Fotografi & Videografi",
+        "Motion Graphic",
+        "Branding & Visual Identity"
+      ],
       "variants": [
-        { "label": "100g", "price": 80 },
-        { "label": "250g", "price": 130 },
-        { "label": "500g", "price": 170 },
-        { "label": "1kg", "price": 210 }
+        { "label": "Kelas 10", "price": 0 },
+        { "label": "Kelas 11", "price": 0 },
+        { "label": "Kelas 12", "price": 0 }
       ]
     },
     {
-      "name": "Toraja Coffee",
-      "slug": "toraja-coffee",
-      "price": 320.0,
-      "image": "/aranoz_files/products/Toraja-Coffee-1-300x300.webp.bv.webp",
-      "description": "Toraja Coffee dengan karakter earthy dan body yang kuat.",
-      "details": ["Grade: Specialty", "Origin: Toraja", "Altitude: 1400–1800 mdpl"],
+      "name": "Akuntansi & Keuangan",
+      "slug": "akuntansi-keuangan",
+      "price": 0,
+      "image": "/images/jurusan/rpl.webp",
+      "description": "Jurusan Akuntansi mempelajari pencatatan keuangan, audit, aplikasi akuntansi, pembukuan, dan laporan finansial.",
+      "details": [
+        "Praktik Akuntansi",
+        "Perpajakan",
+        "Audit Internal",
+        "Aplikasi Akuntansi (Myob, Excel)"
+      ],
       "variants": [
-        { "label": "100g", "price": 130 },
-        { "label": "250g", "price": 200 },
-        { "label": "500g", "price": 260 },
-        { "label": "1kg", "price": 320 }
+        { "label": "Kelas 10", "price": 0 },
+        { "label": "Kelas 11", "price": 0 },
+        { "label": "Kelas 12", "price": 0 }
       ]
     },
     {
-      "name": "Sumatra Tiger Coffee",
-      "slug": "sumatra-tiger-coffee",
-      "price": 320.0,
-      "image": "/aranoz_files/products/Sumatra-Tiger-Grade-3-300x300.webp.bv.webp",
-      "description": "Sumatra Tiger Coffee dengan cita rasa bold dan aroma spicy.",
-      "details": ["Grade: Premium", "Origin: Sumatra", "Process: Natural"],
+      "name": "Otomatisasi Tata Kelola Perkantoran (OTKP)",
+      "slug": "otkp",
+      "price": 0,
+      "image": "/images/jurusan/rpl.webp",
+      "description": "Jurusan OTKP fokus pada administrasi perkantoran, pelayanan publik, komunikasi bisnis, dan pengelolaan dokumen.",
+      "details": [
+        "Administrasi Perkantoran",
+        "Arsip Digital",
+        "Pelayanan Publik",
+        "Komunikasi Bisnis"
+      ],
       "variants": [
-        { "label": "100g", "price": 130 },
-        { "label": "250g", "price": 200 },
-        { "label": "500g", "price": 260 },
-        { "label": "1kg", "price": 320 }
-      ]
-    },
-    {
-      "name": "Sumatra Robusta Coffee",
-      "slug": "sumatra-robusta-coffee",
-      "price": 320.0,
-      "image": "/aranoz_files/products/Sumatra-Robusta-300x300.webp.bv.webp",
-      "description": "Sumatra Robusta Coffee yang kaya body dan rendah acidity.",
-      "details": ["Grade: Premium", "Origin: Sumatra", "Process: Natural"],
-      "variants": [
-        { "label": "100g", "price": 80 },
-        { "label": "250g", "price": 140 },
-        { "label": "500g", "price": 220 },
-        { "label": "1kg", "price": 320 }
+        { "label": "Kelas 10", "price": 0 },
+        { "label": "Kelas 11", "price": 0 },
+        { "label": "Kelas 12", "price": 0 }
       ]
     }
   ]

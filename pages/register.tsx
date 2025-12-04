@@ -1,5 +1,4 @@
 import Head from 'next/head'
-// import Navbar from '../components/Navbar'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
@@ -32,19 +31,16 @@ export default function Register() {
       const user = userCredential.user
       const token = await user.getIdToken()
 
-      // Simpan token ke cookie (1 hari)
       Cookies.set('token', token, { expires: 1 })
 
-      // Simpan data user ke Firestore (collection: users_demo)
       await setDoc(doc(db, 'users_demo', user.uid), {
         uid: user.uid,
         name,
         email,
         createdAt: new Date().toISOString(),
-        role: 'user', // default role
+        role: 'user',
       })
 
-      // Redirect ke dashboard
       router.replace('/dashboard')
     } catch (err: unknown) {
       const errorCode = (err as { code?: string }).code
@@ -62,7 +58,7 @@ export default function Register() {
   return (
     <>
       <Head>
-        <title>Daftar - InfinityAI</title>
+        <title>Daftar - SMK Negeri 4 Tangerang</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
@@ -70,57 +66,55 @@ export default function Register() {
         />
       </Head>
 
-      {/* <Navbar /> */}
+      <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-700 to-blue-900 px-4 font-[Outfit]">
+        <div className="max-w-md w-full bg-white/10 backdrop-blur-md rounded-2xl p-10 shadow-xl border border-white/20 text-white">
 
-      <main className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] min-h-screen flex items-center justify-center px-4 font-[Outfit] text-white">
-        <div className="max-w-md w-full bg-white/10 rounded-xl p-10 shadow-lg border border-white/20">
-          <h1 className="text-3xl font-extrabold mb-6 text-yellow-400 text-center">
-            Buat Akun Baru
+          <h1 className="text-3xl font-extrabold mb-2 text-yellow-400 text-center">
+            Buat Akun SMK 4 Tangerang
           </h1>
+          <p className="text-center text-gray-200 mb-8 text-sm tracking-wide">
+            Daftar untuk melanjutkan
+          </p>
+
           <form onSubmit={handleSubmit} className="space-y-6">
+            
             <div>
-              <label htmlFor="name" className="block mb-2 font-semibold">
-                Nama Lengkap
-              </label>
+              <label htmlFor="name" className="block mb-2 font-semibold">Nama Lengkap</label>
               <input
                 id="name"
                 type="text"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-4 py-3 rounded-md bg-white/10 border border-white/30 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full px-4 py-3 rounded-md bg-white/15 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 placeholder="Nama lengkap kamu"
                 disabled={loading}
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="block mb-2 font-semibold">
-                Email
-              </label>
+              <label htmlFor="email" className="block mb-2 font-semibold">Email</label>
               <input
                 id="email"
                 type="email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 rounded-md bg-white/10 border border-white/30 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full px-4 py-3 rounded-md bg-white/15 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 placeholder="nama@contoh.com"
                 disabled={loading}
               />
             </div>
 
             <div>
-              <label htmlFor="password" className="block mb-2 font-semibold">
-                Kata Sandi
-              </label>
+              <label htmlFor="password" className="block mb-2 font-semibold">Kata Sandi</label>
               <input
                 id="password"
                 type="password"
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 rounded-md bg-white/10 border border-white/30 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full px-4 py-3 rounded-md bg-white/15 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 placeholder="********"
                 disabled={loading}
               />
@@ -136,14 +130,14 @@ export default function Register() {
                 required
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="w-full px-4 py-3 rounded-md bg-white/10 border border-white/30 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="w-full px-4 py-3 rounded-md bg-white/15 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 placeholder="********"
                 disabled={loading}
               />
             </div>
 
             {error && (
-              <p className="text-red-500 text-sm font-semibold">{error}</p>
+              <p className="text-red-400 text-sm font-semibold">{error}</p>
             )}
 
             <button
@@ -155,16 +149,17 @@ export default function Register() {
                   : 'bg-yellow-400 hover:bg-yellow-500 text-[#0f172a]'
               }`}
             >
-              {loading ? 'Sedang daftar...' : 'Daftar'}
+              {loading ? 'Sedang mendaftar...' : 'Daftar'}
             </button>
           </form>
 
           <p className="mt-6 text-center text-gray-300">
             Sudah punya akun?{' '}
-            <Link href="/signin" className="text-yellow-400 hover:underline">
+            <Link href="/signin" className="text-yellow-300 hover:underline">
               Masuk di sini
             </Link>
           </p>
+
         </div>
       </main>
     </>
