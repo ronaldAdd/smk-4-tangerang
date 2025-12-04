@@ -1,0 +1,40 @@
+
+{
+  "blogs": [
+    {
+      "title": "Rahasia Kopi Gayo Terbaik di Indonesia",
+      "date": "2025-01-15",
+      "image": "https://i0.wp.com/amankubacoffee.com/wp-content/uploads/2022/09/Pohon-kopi-gayo-Aceh-sumber.jpg?resize=750%2C500&ssl=1",
+      "excerpt": "Kenali bagaimana metode honey process menciptakan cita rasa yang unik dan manis.",
+      "slug": "rahasia-kopi-gayo"
+    },
+    {
+      "title": "Panduan Memilih Mesin Kopi Untuk Pemula",
+      "date": "2025-02-01",
+      "image": "https://cafemaker.id/wp-content/uploads/2023/06/barista-cafe-making-coffee-preparation-service-concept-1.jpg",
+      "excerpt": "Bingung pilih mesin kopi? Ini tips paling mudah dan aman buat kamu.",
+      "slug": "panduan-mesin-kopi"
+    },
+    {
+      "title": "Manual Brew vs Espresso: Mana yang Cocok?",
+      "date": "2025-02-10",
+      "image": "https://coffeeland.co.id/wp-content/uploads/2019/10/Manual-Brew-and-Espresso.jpg",
+      "excerpt": "Setiap metode punya karakter yang berbeda. Pelajari sebelum membeli alat.",
+      "slug": "manual-vs-espresso"
+    },
+    {
+      "title": "Mengenal Single Origin: Apa Bedanya dengan Blend?",
+      "date": "2025-02-22",
+      "image": "https://kampuskopi.com/wp-content/uploads/2025/09/Image_2025_09_25_17_43_14.jpg",
+      "excerpt": "Single origin menawarkan karakter rasa yang lebih spesifik dan unik. Temukan perbedaannya di sini.",
+      "slug": "mengenal-single-origin"
+    },
+    {
+      "title": "Cara Menyimpan Biji Kopi agar Tetap Fresh",
+      "date": "2025-03-01",
+      "image": "https://kopikita.id/wp-content/uploads/2022/10/jauhkan-dari-makanan-lain.jpg",
+      "excerpt": "Biji kopi bisa cepat basi kalau salah penyimpanan. Ini tips menyimpannya agar kesegaran tetap maksimal.",
+      "slug": "tips-menyimpan-kopi"
+    }    
+  ]
+}

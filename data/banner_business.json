@@ -1,0 +1,34 @@
+{
+  "banners": [
+    {
+      "image": "/aranoz_files/generic-FV_sstock_1500.webp",
+      "tag": "FNB TECH BUSINESS",
+      "tagColor": "text-yellow-300",
+      "title": "Integrated <br /> Business Ecosystem",
+      "desc": "Empowering global supply chains across Coffee, Agritech, Fishery & Farm.",
+      "buttonText": "Explore Divisions",
+      "buttonLink": "#business-divisions",
+      "buttonClass": "bg-yellow-400 text-black hover:bg-yellow-300"
+    },
+    {
+      "image": "https://fnb.coffee/wp-content/uploads/2025/04/Private-Label-1.jpg",
+      "tag": "OEM / PRIVATE LABEL",
+      "tagColor": "text-green-400",
+      "title": "Premium Coffee <br /> OEM Production",
+      "desc": "High-quality coffee manufacturing for global private label brands.",
+      "buttonText": "Learn More",
+      "buttonLink": "/oem-private-label",
+      "buttonClass": "bg-green-600 text-white hover:bg-green-500"
+    },
+    {
+      "image": "https://www.socially-responsible-coffee.com/wp-content/uploads/sites/549/2022/09/Coffee-bags-1440x900.jpg",
+      "tag": "WHOLESALE GREEN BEANS",
+      "tagColor": "text-blue-400",
+      "title": "Bulk Green Coffee <br /> For Global Buyers",
+      "desc": "Arabica, Robusta, Specialty Grade & Kopi Luwak for importers and roasters.",
+      "buttonText": "View Details",
+      "buttonLink": "/wholesale-green-coffee",
+      "buttonClass": "bg-blue-600 text-white hover:bg-blue-500"
+    }
+  ]
+}

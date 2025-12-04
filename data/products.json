@@ -1,0 +1,87 @@
+{
+  "products": [
+    {
+      "name": "Excelsa Coffee",
+      "slug": "excelsa-coffee",
+      "price": 150.0,
+      "image": "/aranoz_files/products/Excelsa-Coffee-300x300.webp.bv.webp",
+      "description": "Premium Excelsa Coffee dengan karakter rasa unik dan aroma buah yang khas.",
+      "details": ["Grade: Premium", "Origin: Indonesia", "Process: Natural"],
+      "variants": [
+        { "label": "Green Beans", "price": 60 },
+        { "label": "Powder", "price": 95 },
+        { "label": "Roasted Beans", "price": 130 }
+      ]
+    },
+    {
+      "name": "Liberica Coffee",
+      "slug": "liberica-coffee",
+      "price": 180.0,
+      "image": "/aranoz_files/products/Liberica-Coffee-300x300.webp.bv.webp",
+      "description": "Liberica Coffee dengan karakter smoky dan aroma floral khas.",
+      "details": ["Grade: Premium", "Origin: Indonesia", "Process: Natural"],
+      "variants": [
+        { "label": "100g", "price": 70 },
+        { "label": "250g", "price": 110 },
+        { "label": "500g", "price": 150 },
+        { "label": "1kg", "price": 180 }
+      ]
+    },
+    {
+      "name": "Abyssinian Coffee",
+      "slug": "abyssinian-coffee",
+      "price": 210.0,
+      "image": "/aranoz_files/products/Abyssinia-Coffee-1-300x300.webp.bv.webp",
+      "description": "Abyssinian Coffee dengan rasa fruity dan acidity yang seimbang.",
+      "details": ["Grade: Premium", "Origin: Ethiopia", "Process: Washed"],
+      "variants": [
+        { "label": "100g", "price": 80 },
+        { "label": "250g", "price": 130 },
+        { "label": "500g", "price": 170 },
+        { "label": "1kg", "price": 210 }
+      ]
+    },
+    {
+      "name": "Toraja Coffee",
+      "slug": "toraja-coffee",
+      "price": 320.0,
+      "image": "/aranoz_files/products/Toraja-Coffee-1-300x300.webp.bv.webp",
+      "description": "Toraja Coffee dengan karakter earthy dan body yang kuat.",
+      "details": ["Grade: Specialty", "Origin: Toraja", "Altitude: 1400–1800 mdpl"],
+      "variants": [
+        { "label": "100g", "price": 130 },
+        { "label": "250g", "price": 200 },
+        { "label": "500g", "price": 260 },
+        { "label": "1kg", "price": 320 }
+      ]
+    },
+    {
+      "name": "Sumatra Tiger Coffee",
+      "slug": "sumatra-tiger-coffee",
+      "price": 320.0,
+      "image": "/aranoz_files/products/Sumatra-Tiger-Grade-3-300x300.webp.bv.webp",
+      "description": "Sumatra Tiger Coffee dengan cita rasa bold dan aroma spicy.",
+      "details": ["Grade: Premium", "Origin: Sumatra", "Process: Natural"],
+      "variants": [
+        { "label": "100g", "price": 130 },
+        { "label": "250g", "price": 200 },
+        { "label": "500g", "price": 260 },
+        { "label": "1kg", "price": 320 }
+      ]
+    },
+    {
+      "name": "Sumatra Robusta Coffee",
+      "slug": "sumatra-robusta-coffee",
+      "price": 320.0,
+      "image": "/aranoz_files/products/Sumatra-Robusta-300x300.webp.bv.webp",
+      "description": "Sumatra Robusta Coffee yang kaya body dan rendah acidity.",
+      "details": ["Grade: Premium", "Origin: Sumatra", "Process: Natural"],
+      "variants": [
+        { "label": "100g", "price": 80 },
+        { "label": "250g", "price": 140 },
+        { "label": "500g", "price": 220 },
+        { "label": "1kg", "price": 320 }
+      ]
+    }
+  ]
+}

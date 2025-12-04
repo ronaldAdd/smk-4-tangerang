@@ -1,0 +1,34 @@
+{
+  "banners": [
+    {
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/053/370/501/small/coffee-beans-and-cup-of-coffee-on-wooden-table-photo.jpeg",
+      "tag": "FNB TECH 99 SERIES",
+      "tagColor": "text-green-600",
+      "title": "Brew Smarter, <br /> Taste Better.",
+      "desc": "Smart coffee machine with high capacity, consistent taste, and effortless maintenance.",
+      "buttonText": "Order Now",
+      "buttonLink": "#",
+      "buttonClass": "bg-black text-white hover:bg-[#222]"
+    },
+    {
+      "image": "https://static.vecteezy.com/system/resources/previews/026/466/922/non_2x/cup-of-coffee-espresso-beans-web-banner-with-copy-space-generative-ai-free-photo.jpg",
+      "tag": "SPECIAL PROMO",
+      "tagColor": "text-yellow-600",
+      "title": "Big Offers <br /> Are Coming!",
+      "desc": "Shop the latest smart coffee machines with special discounts.",
+      "buttonText": "Shop Now",
+      "buttonLink": "#",
+      "buttonClass": "bg-yellow-500 text-black hover:bg-yellow-400"
+    },
+    {
+      "image": "https://img.freepik.com/free-photo/delicious-coffee-cup-table_23-2151899251.jpg?semt=ais_incoming&w=740&q=80",
+      "tag": "NEW ARRIVAL",
+      "tagColor": "text-blue-600",
+      "title": "Experience a <br /> New Coffee Vibe.",
+      "desc": "Discover our latest innovative coffee machines with improved brewing technology.",
+      "buttonText": "Discover Now",
+      "buttonLink": "#",
+      "buttonClass": "bg-blue-600 text-white hover:bg-blue-500"
+    }
+  ]
+}
