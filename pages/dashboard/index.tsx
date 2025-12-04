@@ -1,6 +1,7 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Link from "next/link";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 // --- SIDEBAR ---
 function Sidebar() {
@@ -20,9 +21,15 @@ function Sidebar() {
         <button className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100">
           📝 Presensi
         </button>
-        <button className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100">
+
+        {/* LINK KE HALAMAN PENGUMUMAN */}
+        <Link
+          href="/dashboard/pengumuman"
+          className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100"
+        >
           📢 Pengumuman
-        </button>
+        </Link>
+
         <button className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100">
           ⚙️ Pengaturan
         </button>
@@ -50,8 +57,7 @@ export default function DashboardPage() {
       <Navbar />
       <Sidebar />
 
-      <div className="md:pl-64"> {/* SHIFT CONTENT KETIKA SIDEBAR MUNCUL */}
-
+      <div className="md:pl-64">
         {/* HERO */}
         <header className="relative pt-36 pb-24 bg-blue-900">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-25" />
@@ -66,7 +72,7 @@ export default function DashboardPage() {
           </div>
         </header>
 
-        {/* GRID CARDS */}
+        {/* GRID MENU */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-3xl font-bold text-blue-800 text-center mb-10">
@@ -78,24 +84,25 @@ export default function DashboardPage() {
                 { title: "Jadwal Pelajaran", icon: "📘" },
                 { title: "Nilai & Rapor", icon: "📊" },
                 { title: "Presensi", icon: "📝" },
-                { title: "Pengumuman", icon: "📢" },
+                { title: "Pengumuman", icon: "📢", link: "/dashboard/pengumuman" },
                 { title: "E-Learning", icon: "💻" },
                 { title: "Profile Siswa", icon: "🧑" }
               ].map((item, i) => (
-                <div
+                <Link
                   key={i}
+                  href={item.link ? item.link : "#"}
                   className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition cursor-pointer border border-gray-100"
                 >
                   <div className="text-4xl mb-3">{item.icon}</div>
                   <h3 className="text-lg font-bold text-blue-800">{item.title}</h3>
                   <p className="text-gray-600 text-sm mt-2">Klik untuk membuka</p>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
         </section>
 
-        {/* INFO SECTION */}
+        {/* INFORMASI SEKOLAH */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
             <div>
@@ -118,9 +125,13 @@ export default function DashboardPage() {
           <h3 className="text-2xl md:text-3xl font-bold text-blue-900">
             Tetap Terhubung Dengan Informasi Terbaru SMK Negeri 4 Tangerang
           </h3>
-          <button className="mt-6 px-8 py-3 bg-blue-900 text-white font-semibold rounded-xl hover:bg-blue-800 transition">
+
+          <Link
+            href="/dashboard/pengumuman"
+            className="inline-block mt-6 px-8 py-3 bg-blue-900 text-white font-semibold rounded-xl hover:bg-blue-800 transition"
+          >
             Lihat Pengumuman
-          </button>
+          </Link>
         </section>
 
         <Footer />
