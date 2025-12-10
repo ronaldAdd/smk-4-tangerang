@@ -5,7 +5,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    const response = await fetch("https://antrean.logammulia.com/register", {
+    const response = await fetch("https://antrean.logammulia.com/", {
       method: "GET",
       headers: {
         "User-Agent": "Mozilla/5.0",
