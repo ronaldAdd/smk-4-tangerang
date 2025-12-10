@@ -10,7 +10,7 @@ type ProxyResponse = {
   error?: string;
 };
 
-const TARGET = "https://antrean.logammulia.com/register";
+const TARGET = "https://antrean.logammulia.com";
 
 // ==============================
 // Helper: Extract <title>
