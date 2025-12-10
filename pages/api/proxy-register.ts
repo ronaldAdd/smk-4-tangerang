@@ -60,16 +60,25 @@ function filterResponseHeaders(h: Headers) {
 // ==============================
 // Helper: Serialize Request Body
 // ==============================
-function serializeBody(req: NextApiRequest) {
-  if (typeof req.body === "string" || Buffer.isBuffer(req.body)) {
+function serializeBody(req: NextApiRequest): BodyInit | undefined {
+  // If body is already a string → OK
+  if (typeof req.body === "string") {
     return req.body;
   }
-  try {
-    return JSON.stringify(req.body);
-  } catch {
-    return undefined;
+
+  // If body is Buffer → convert to Uint8Array (fetch accepts this)
+  if (Buffer.isBuffer(req.body)) {
+    return new Uint8Array(req.body);
   }
+
+  // If body is an object → JSON.stringify
+  if (typeof req.body === "object" && req.body !== null) {
+    return JSON.stringify(req.body);
+  }
+
+  return undefined;
 }
+
 
 // ==============================
 // MAIN HANDLER
